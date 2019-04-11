@@ -1,0 +1,26 @@
+@import 'reset.scss';
+@import 'vars.scss';
+@import 'iconfont.scss';
+@import 'scrollbar.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Microsoft Yahei';
+  font-size: 12px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+
+$num: 24;
+@for $i from 1 through 24 {
+  .col-#{$i} {
+    width: $i / $num * 100%;
+    float: left;
+    padding: 20px 15px 0;
+  }
+}
