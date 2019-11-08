@@ -12,7 +12,8 @@ module.exports = {
   extends: 'eslint:recommended',
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html',
+    'vue'
   ],
   // check if imports actually resolve
   'settings': {

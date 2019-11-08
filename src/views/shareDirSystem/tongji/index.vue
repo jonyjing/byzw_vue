@@ -2,70 +2,49 @@
   <div class="main">
     <div class="content">
       <el-row>
-        <el-col :span="8"
-                class="panel">
+        <el-col :md="8" :sm="24" class="panel">
           <div class="chartTitle">接口总数：124个</div>
-          <ratio-bar :ratioDataArray="ratioDataArray1"
-                     id="ratio1"></ratio-bar>
+          <ratio-bar :ratioDataArray="ratioDataArray1" id="ratio1"></ratio-bar>
         </el-col>
-        <el-col :span="8"
-                class="panel">
+        <el-col :md="8" :sm="24" class="panel">
           <div class="chartTitle">活跃接口数：108个</div>
-          <e-bar id="chart1"
-                 :chartData="chartData1"
-                 height="230px"></e-bar>
+          <e-bar id="chart1" :chartData="chartData1" height="230px"></e-bar>
         </el-col>
-        <el-col :span="8"
-                class="panel">
+        <el-col :md="8" :sm="24" class="panel">
           <div class="chartTitle">接入客户数：17个</div>
-          <ratio-bar :ratioDataArray="ratioDataArray1"
-                     id="ratio2"></ratio-bar>
+          <ratio-bar :ratioDataArray="ratioDataArray1" id="ratio2"></ratio-bar>
         </el-col>
       </el-row>
       <el-row>
-        <div class="title"><i class="el-icon-edit-outline"></i>申请趋势</div>
-        <el-col :span="15"
-                class="panel">
-          <e-line id="chart3"
-                  :chartData="chartData2"
-                  height="270px"></e-line>
+        <div class="title">
+          <i class="el-icon-edit-outline"></i>申请趋势
+        </div>
+        <el-col :span="15" class="panel">
+          <e-line id="chart3" :chartData="chartData2" height="270px"></e-line>
         </el-col>
-        <el-col :span="9"
-                class="panel">
+        <el-col :span="9" class="panel">
           <div class="chartTitle small">最新一月申请接口数量373个，待审批86个，已审批287个</div>
-          <e-pie id="chart4"
-                 :chartData="chartData3"
-                 height="260px"></e-pie>
+          <e-pie id="chart4" :chartData="chartData3" height="260px"></e-pie>
         </el-col>
       </el-row>
       <el-row>
-        <div class="title"><i class="el-icon-edit-outline"></i>调用趋势</div>
-        <el-col :span="12"
-                class="panel">
+        <div class="title">
+          <i class="el-icon-edit-outline"></i>调用趋势
+        </div>
+        <el-col :span="12" class="panel">
           <div class="chartTitle small">今日运行接口数102个，占比92.73%，未运行接口数8个，占比7.27%</div>
-          <e-pie id="chart5"
-                 :chartData="chartData3"
-                 height="280px"></e-pie>
+          <e-pie id="chart5" :chartData="chartData3" height="280px"></e-pie>
         </el-col>
-        <el-col :span="12"
-                class="panel">
+        <el-col :span="12" class="panel">
           <div class="chartTitle small">今日调用总次数3475个，成功3453次，占比99.37%，失败22次，占比0.63%</div>
-          <e-pie id="chart6"
-                 :chartData="chartData3"
-                 height="280px"></e-pie>
+          <e-pie id="chart6" :chartData="chartData3" height="280px"></e-pie>
         </el-col>
         <el-row>
-          <el-col :span="12"
-                  class="panel">
-            <e-line id="chart7"
-                    :chartData="chartData4"
-                    height="270px"></e-line>
+          <el-col :span="12" class="panel">
+            <e-line id="chart7" :chartData="chartData4" height="270px"></e-line>
           </el-col>
-          <el-col :span="12"
-                  class="panel">
-            <e-line id="chart8"
-                    :chartData="chartData4"
-                    height="270px"></e-line>
+          <el-col :span="12" class="panel">
+            <e-line id="chart8" :chartData="chartData4" height="270px"></e-line>
           </el-col>
         </el-row>
       </el-row>
@@ -74,10 +53,10 @@
 </template>
 
 <script>
-import eBar from '../components/bar.vue';
-import eLine from '../components/line.vue';
-import ePie from '../components/pie.vue';
-import ratioBar from '../components/ratioBar.vue';
+import eBar from '../components/bar.vue'
+import eLine from '../components/line.vue'
+import ePie from '../components/pie.vue'
+import ratioBar from '../components/ratioBar.vue'
 export default {
   data() {
     return {
